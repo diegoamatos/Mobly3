@@ -17,3 +17,7 @@ define('SITENAME', 'Titulo Do Seu Site');//Defina o titulo do site
 define('SITEDESC', 'Bem-vindo à meu site.');//Defina a descrição do site
 
 define('HOME', 'http://URLDoSITE'); //Defina a URL do site (OBS. Sem a barra no final EX. http://www.site.com )
+
+Sessão Administrativa.: http://localhost/admin
+Email.: admin@admin.com
+Senha.: 123456
