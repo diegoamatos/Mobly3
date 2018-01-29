@@ -5959,7 +5959,7 @@ CREATE TABLE `mb_usuario` (
 
 INSERT INTO `mb_usuario` (`id_usuario`, `nome_usuario`, `ultimo_usuario`, `email_usuario`, `senha_usuario`, `telefone_usuario`, `cpf_usuario`, `endereco_usuario`, `numero_usuario`, `cep_usuario`, `bairro_usuario`, `cidade_usuario`, `estado_usuario`, `registrado_usuario`, `atualizacao_usuario`, `nivel_usuario`) VALUES
 (1, 'Diego', 'Matos', 'admin@admin.com', 'e10adc3949ba59abbe56e057f20f883e', '900245600', '35100000000', 'Rua Frei Gaspar', '160', '1130300', 'Biquinha', 15, 25, '2018-01-20 13:14:04', '2018-01-21 16:19:40', 3),
-
+(2, 'Cliente', '', 'cliente@cliente.com', 'e10adc3949ba59abbe56e057f20f883e', '1100087654', '65432456776', 'Av. Paulista', '160', '11330300', 'Centro', '4850', '25', '2018-01-29 03:24:20', '2018-01-29 07:17:22', '1');
 --
 -- Indexes for dumped tables
 --
