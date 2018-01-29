@@ -195,6 +195,7 @@ class Seo {
 				}else{
 					header("HTTP/1.1 301 Moved Permanently");
 					header("Location: ". HOME . DIRECTORY_SEPARATOR ."login");
+					exit();
 				}
                 break;
 			

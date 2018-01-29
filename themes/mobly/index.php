@@ -59,8 +59,9 @@ $tpl_empresa = $View->Load('empresa_p');
                 $new = $produto->getResult()[0];
                 $new['produto_titulo'] = Check::Words($new['produto_titulo'], 9);
                 $new['produto_conteudo'] = Check::Words($new['produto_conteudo'], 20);
-                $new['datetime'] = date('Y-m-d', strtotime($new['produto_data']));
-                $new['pubdate'] = date('d/m/Y H:i', strtotime($new['produto_data']));
+                $new['produto_preco'] = number_format($new['produto_preco'], 2, ',', '.');
+                $new['url'] = HOME;
+				$new['produto_id'] = $new['produto_id'];
                 $View->Show($new, $tpl_m);
             endif;
             ?>
@@ -73,8 +74,9 @@ $tpl_empresa = $View->Load('empresa_p');
                 else:
                     foreach ($produto->getResult() as $news):
                         $news['produto_titulo'] = Check::Words($news['produto_titulo'], 12);
-                        $news['datetime'] = date('Y-m-d', strtotime($news['produto_data']));
-                        $news['pubdate'] = date('d/m/Y H:i', strtotime($news['produto_data']));
+                        $news['produto_preco'] = number_format($news['produto_preco'], 2, ',', '.');
+						$news['url'] = HOME;
+						$news['produto_id'] = $news['produto_id'];
                         $View->Show($news, $tpl_p);
                     endforeach;
                 endif;
