@@ -38,7 +38,6 @@ function __autoload($Class) {
         die;
     endif;
 }
-
 // TRATAMENTO DE ERROS //
 //CSS constantes :: Mensagens de Erro
 define('WS_ACCEPT', 'accept');
