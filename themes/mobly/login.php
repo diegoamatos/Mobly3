@@ -60,7 +60,6 @@
 							</label>
 							
 							<input type="submit" value="Logar" name="SendFormLogin" class="btn">
-							
 						</div>
 						</form>
 					</section>
