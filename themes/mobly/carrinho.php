@@ -12,7 +12,8 @@ if(isset($veri)){
 if(isset($Link->Url[2])){
 	$CarResult = $Carrinho->removeProduto($Link->Url[2]);
 }
-
+//unset($_SESSION["carrinho"]);
+//unset($_SESSION["produto"]);
 ?>
 <!--HOME CONTENT-->
 <div class="site-container">
@@ -34,7 +35,7 @@ if(isset($Link->Url[2])){
 							if(isset($_SESSION["carrinho"])){?>
 							<div style="float: right;"><a class="btn btn-success direita" href="<?= HOME ?>/conferir" title="Ir para o pagamento">Ir para o pagamento</a></div>
 						<?php }else{?>
-							<div style="float: right;"><a class="btn btn-success direita" href="<?= HOME ?>/produtos" title="Ir para compras">Ir para compras</a></div>
+							<div style="float: right;"><a class="btn btn-success direita" href="<?= HOME ?>/" title="Ir para compras">Ir para compras</a></div>
 						<?php }?>						
 					</div>
 					<div style="clear: both;"></div>					
