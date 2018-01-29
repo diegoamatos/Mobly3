@@ -5,7 +5,7 @@
             <ul>
 			<?php
 				$MenuCatFoo = new Read;
-				$MenuCatFoo->ExeRead("mb_categorias", "WHERE categoria_pai = : cat ORDER BY categoria_cadastro DESC LIMIT :limit OFFSET :offset", "cat=NULL&limit=4&offset=0");
+				$MenuCatFoo->ExeRead("mb_categorias", "WHERE categoria_pai IS NULL ORDER BY categoria_cadastro DESC LIMIT :limit", "limit=4");
 				if (!$MenuCatFoo->getResult()):
 					WSErro('Desculpe, ainda não existem categorias cadastradas. Favor volte mais tarde!', WS_INFOR);
 				else:
