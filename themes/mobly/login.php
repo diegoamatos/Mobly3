@@ -12,11 +12,7 @@
 		if (!$login->getResult()):
 			WSErro($login->getError()[0], $login->getError()[1]);
 		else:
-			if($_SESSION['userlogin']["nivel_usuario"]==1){
-				header('Location: ' . HOME . '/conferir');
-			}else{
-				header('Location: ' . HOME . '/dasboard');
-			}
+			header('Location: ' . HOME . '/conferir');
 		endif;
 
 	endif;
